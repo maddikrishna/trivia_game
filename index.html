@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two-Player Trivia Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen" id="screen1">
+    <h1>Two-Player Trivia Battle Game</h1>
+
+    <input type="text" id="player1Name" placeholder="Enter Player 1 Name">
+    <input type="text" id="player2Name" placeholder="Enter Player 2 Name">
+
+    <p id="nameError"></p>
+    <button id="startGameBtn">Start Game</button>
+</div>
+
+<div class="screen" id="screen2">
+    <h2 id="roundText"></h2>
+
+    <select id="categorySelect">
+        <option value="">Select Category</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="geography">Geography</option>
+        <option value="sports">Sports</option>
+        <option value="music">Music</option>
+        <option value="film_and_tv">Film & TV</option>
+    </select>
+
+    <p id="categoryError"></p>
+    <button id="startRoundBtn">Start Round</button>
+</div>
+
+<div class="screen" id="screen3">
+    <p id="roundInfo"></p>
+    <p id="categoryInfo"></p>
+    <p id="turnInfo"></p>
+    <p id="scoreInfo"></p>
+    <p id="difficultyInfo"></p>
+
+    <h3 id="questionText"></h3>
+    <div id="optionsBox"></div>
+
+    <button id="nextBtn" disabled>Next</button>
+</div>
+
+<div class="screen" id="screen4">
+    <h2>Round Completed</h2>
+    <button id="nextRoundBtn">Next Round</button>
+    <button id="endGameBtn">End Game</button>
+</div>
+
+<div class="screen" id="screen5">
+    <h2>Final Result</h2>
+    <p id="finalScore"></p>
+    <h3 id="winnerText"></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
